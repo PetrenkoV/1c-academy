@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/uikit.css">
+	<link rel="stylesheet" href="css/components/slideshow.css">
+	<link rel="stylesheet" href="css/components/dotnav.css">
+	<link rel="stylesheet" href="css/components/slidenav.css">
+	<link rel="stylesheet" href="css/components/slider.css">
+	<link rel="stylesheet" href="css/components/accordion.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/uikit.js"></script>
+	<script src="js/core/modal.js"></script>
+	<script src="js/core/nav.js"></script>
+	<script src="js/components/slideshow.js"></script>
+	<script src="js/components/slideshow-fx.js"></script>
+	<script src="js/core/dropdown.js"></script>
+	<script src="js/components/slider.js"></script>
+	<script src="js/components/accordion.js"></script>
+	<meta charset="UTF-8">
+	<title>MATERIAL</title>
+</head>
+
+<body>
+	<header>
+		<div class="uk-grid">
+			<div class="uk-container-center item_1"><img src="imgs/logo.png" alt="">
+			</div>
+			<div class="uk-width-1-5 uk-visible-large item_2"><img src="imgs/10.png" alt="">
+			</div>
+			<div class="uk-width-1-5 uk-visible-large item_3">
+				<ul>
+					<li>+38(044)360-051-1</li>
+					<li>+38(061)222-777-3</li>
+					<li class="underline">pahomov@aktivcorp.com</li>
+				</ul>
+			</div>
+			<div class="uk-width-1-5 uk-visible-large authorize">
+				<div data-uk-dropdown="{mode:'click'}">
+					<button><img src="imgs/key.png">
+						<span>Вход для студентов</span>
+					</button>
+					<div class="login uk-dropdown">
+						<p class='students'><img src="imgs/key2.png" alt="">Вход для студентов</p>
+						<p class="title">Электронная почта</p>
+						<input type="e-mail">
+						<p class="title">Пароль</p>
+						<input type="password">
+						<p class="title">
+							<input type="checkbox"> Запормнить меня
+						</p>
+						<button class="right">Войти</button>
+						<p class="normal">Нет учетной записи?</p>
+						<p class="reg"><a href="">Зарегистрироваться</a>
+						</p>
+					</div>
+				</div>
+				<div class="search">
+					<input type="search" name='q' placeholder="Поиск... ">
+					<input type="submit" value=''>
+				</div>
+			</div>
+	</header>
+	<nav class="uk-navbar">
+		<div class="uk-hidden-large menu">
+			<div class="left">
+				<a href="#nav" class="uk-navbar-toggle-alt uk-hidden-large" data-uk-offcanvas><img src="imgs/toggle.png" alt="" class="toggle">
+				</a>
+				<div id="nav" class="uk-offcanvas">
+					<div class="uk-offcanvas-bar nav">
+						<ul class="uk-nav  uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav="{multiple:true}">
+							<li>
+								<a href="#">1C онлайн</a>
+							</li>
+							<li class='uk-parent'><a href="#">1С программа</a>
+								<ul class="uk-nav-sub">
+									<li><a href="#">Зарплата и управление персоналом</a>
+									</li>
+									<li><a href="#">Управление торговлей</a>
+									</li>
+									<li><a href="#">Управление торговым предприятием</a>
+									</li>
+									<li><a href="#">Бухгалтерия для Укрины</a>
+									</li>
+									<li><a href="#">Бухгалтерия с/х предприятия</a>
+									</li>
+									<li><a href="#">Комплексный учет для бюджетных организаций</a>
+									</li>
+									<li><a href="#">Базовые версии</a>
+									</li>
+									<li><a href="#">ИТС</a>
+									</li>
+									<li><a href="#">Все конфигурации</a>
+									</li>
+								</ul>
+							</li>
+							<li class='uk-parent'><a href="#">1С обучение</a>
+								<ul class="uk-nav-sub">
+									<li><a href="#">1</a>
+									</li>
+									<li><a href="#">2</a>
+									</li>
+									<li><a href="#">3</a>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#">1С отчетность</a>
+							</li>
+							<li class='uk-parent'><a href="#">О нас</a>
+								<ul class="uk-nav-sub">
+									<li><a href="#">1</a>
+									</li>
+									<li><a href="#">2</a>
+									</li>
+									<li><a href="#">3</a>
+									</li>
+								</ul>
+							</li>
+							<li class='uk-parent'><a href="#">Полезные материалы</a>
+								<ul class="uk-nav-sub">
+									<li><a href="#">1</a>
+									</li>
+									<li><a href="#">2</a>
+									</li>
+									<li><a href="#">3</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<div class="search">
+							<input type="search" name='q' placeholder="Поиск... ">
+							<input type="submit" value=''>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<a href="#man" class="uk-navbar-toggle-alt uk-hidden-large" data-uk-offcanvas><img src="imgs/man.png" alt="" class="man">
+				</a>
+				<div id="man" class="uk-offcanvas">
+					<div class="uk-offcanvas-bar man uk-offcanvas-bar-flip">
+						<ul class="uk-nav uk-nav-offcanvas" data-uk-nav>
+							<div class="uk-container-center">
+								<p class='students'><img src="imgs/key3.png" alt="">Вход для студентов</p>
+								<p class="title">Электронная почта
+									<input type="e-mail">
+								</p>
+
+								<p class="title">Пароль
+									<input type="password">
+								</p>
+
+								<p class="title">
+									<input type="checkbox"> Запормнить меня
+								</p>
+								<button class="right">Войти</button>
+								<div class="uk-clearfix"></div>
+								<p class="normal">Нет учетной записи?</p>
+								<p class="reg"><a href="">Зарегистрироваться</a>
+								</p>
+							</div>
+						</ul>
+					</div>
+				</div>
+				<a href="#map" class="uk-navbar-toggle-alt uk-hidden-large" data-uk-offcanvas><img src="imgs/map.png" alt="" class="map">
+				</a>
+			</div>
+
+			</a>
+		</div>
+		<div class="uk-container-center uk-container">
+			<ul class="uk-navbar-nav uk-visible-large">
+
+
+				<li><a href="#">1C ОНЛАЙН</a>
+				</li>
+
+
+				<li><a href="#">1C ПРОГРАММА</a>
+				</li>
+
+
+				<li><a href="#">1C ОБУЧЕНИЕ</a>
+				</li>
+
+
+				<li><a href="#">1C ОТЧЕТНОСТЬ</a>
+				</li>
+
+
+				<li> <a href="#">ПОЛЕЗНЫЕ МАТЕРИАЛЫ</a>
+				</li>
+
+
+				<li><a href="#">АКЦИИ</a>
+				</li>
+
+			</ul>
+		</div>
+	</nav>
+	<div class="uk-container navigation">
+		<p class="navigation"><a href="">Главная </a>/ <a href="">1С Обучение</a>/ Бухгалтерский учет с нуля + Первые шаги в 1С:Бухгалтерия 8 для Украины</p>
+	</div>
+	<div class="main-main uk-container-center">
+		<div class="main uk-width-large-7-10 uk-width-medium-1-1 uk-width-small-1-1">
+			<div class="main-content">
+				<h1 class="title">Бухгалтерский учет с нуля + Первые шаги в 1С:Бухгалтерия 8 для Украины</h1>
+				<div class="info">
+					<img src="imgs/thumbnail2.png" alt="" class="thumbnail">
+					<ul>
+						<li class="watch"><span>Длительность:</span> 30 часов</li>
+						<li class="calendar"><span>Начало:</span> Открытая дата</li>
+						<li class="money"><span>Стоимость:</span> <span class="price"><span>730грн.</span> 640 грн.</span>
+						</li>
+					</ul>
+					<div class="right">
+						<button class="buttonl uk-hidden-small">
+							<span>ЗАПИТЬСЯ<br> НА КУРС</span> <img src="imgs/buttonl2.png" alt="">
+						</button>
+						<button class="buttonr uk-hidden-small">
+							<span>1-Й УРОК<br> БЕСПЛАТНО</span><img src="imgs/buttonr2.png" alt="">
+						</button>
+					</div>
+					<div class="uk-clearfix"></div>
+					<div class="bottom uk-text-center">
+						<button class="buttonl uk-visible-small">
+							<span>ЗАПИТЬСЯ<br> НА КУРС</span> <img src="imgs/buttonl2.png" alt="">
+						</button>
+						<button class="buttonr uk-visible-small">
+							<span>1-Й УРОК<br> БЕСПЛАТНО</span><img src="imgs/buttonr2.png" alt="">
+						</button>
+					</div>
+					<div class="uk-clearfix"></div>
+				</div>
+				<div class="item_1 uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
+					<ul>
+						<li class="item_1">Доступные цена на обучение</li>
+						<li class="item_2">Возможность общаться с преподавателем и группой в реальном времени</li>
+						<li class="item_3">Дистанционное обучение без отрыва от основной деятельности, в комфортных привычных условиях</li>
+					</ul>
+				</div>
+				<div class="item_2 uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
+					<ul>
+						<li class="item_1">Свидетесльство от фирмы 1С</li>
+						<li class="item_2">Возможность "с нуля" освоить новую востребованную специальность</li>
+						<li class="item_3">Возможность получить практический опыт, работая в программе 1С:Бухгалтерия 8 удаленно</li>
+					</ul>
+				</div>
+				<div class="uk-clearfix"></div>
+				<p>
+					Авторский сертифицированный курс «Бухгалтерский учет с нуля + Первые шаги в 1С:Бухгалтерия 8 для Украины» заработан преподавателями ЦО "Актив" для тех, кто задумывается о смене профессии, мечтает получить стабильную, престижную и высокооплачиваемую работу, а также постичь все премудрости ведения учета и разобраться в программе 1С:Бухгалтерия 8 для Украины. Этот бухгалтерский курс состоит из теоретической части, помогающей освоить основные приемы ведения бухгалтерского учета и практической сертифицированной части, обучающей основным принципам работы в программе 1С:Бухгалтерия 8 для Украины.
+				</p>
+				<p class="title">
+					Как проходит обучение?
+				</p>
+				<p>
+					Процесс обучения проводится онлайн, без необходимости присутствовать в учебном центре лично. Этот современный и качественный способ обучения проходит с применением современных веб-технологий. А комфортная и дружелюбная среда делает обучение МСФО интересным, а главное понятным, независимо от уровня владения ПК. Базовая программа МСФО разделена на 8 модулей. После каждого слушатели проходят тестирование, успешная сдача которого является условием перехода на следующий модуль. Это позволяет осуществить промежуточный срез знаний, а также системно осваивать материал (просм. - <a href=""><span>Правила обучения</span></a>).
+				</p>
+				<p class="title">
+					Весь курс разбит на 8 модулей. Каждый модуль включает:
+				</p>
+				<ul>
+					<li>Теоретическая часть:
+						<ul>
+							<li>видеоуроки (архивная запись вебинара);</li>
+							<li>конспект лекции.</li>
+						</ul>
+					</li>
+					<li>Практическое задание:
+						<ul>
+							<li>пример решения задачи;</li>
+							<li>вебинары-практикумы.</li>
+						</ul>
+					</li>
+				</ul>
+				<p>Курс рассчитан на изучениe в течение месяца, если уделять обучению около часа в сутки.</p>
+				<div class="uk-container-center uk-width-medium-1-2 uk-hidden-large uk-width-small-1-1">
+					<div class="uk-accordion" data-uk-accordion="{showfirst: false}">
+						<p class="uk-accordion-title">КОРПОРАТИВНЫЕ СКИДКИ
+						</p>
+						<div class="uk-accordion-content">
+							<div class="uk-text-center">
+								<p class="discounts">от 3-4 сотрудников<span class="discounts"> ...............5%</span>
+								</p>
+								<p class="discounts">от 5-9 сотрудников<span class="discounts"> .............10%</span>
+								</p>
+								<p class="discounts">от 10 сотрудников<span class="discounts"> ..............15%</span>
+								</p>
+							</div>
+							<p>Если клиент регистрирует более 15 сотрудников, размер скидки обсуждается отдельно. Пожалуйста, свяжитесь с нами для получения более подробной информации.</p>
+						</div>
+						<p class="uk-accordion-title">СКАЧАТЬ ПРОГРАММУ КУРСА</p>
+						<div class="uk-accordion-content">
+							<div class="uk-text-center">
+								<ul class="download">
+									<li class="item_1">Программа (doc. 1.5Mb)</li>
+									<li class="item_2">Программа (pdf. 1.5Mb)</li>
+									<li class="item_3">Распечатать программу</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button class="buttonb">
+					<span>ЗАПИСАТЬСЯ</span><img src="imgs/buttonl2.png" alt="">
+				</button>
+				<div class="uk-clearfix"></div>
+				<a href="#top" class="uk-button uk-visible-large" data-uk-smooth-scroll><img src="imgs/up.png" alt="">
+				</a>
+			</div>
+
+		</div>
+		<div class="sidebar uk-width-2-10 uk-visible-large ">
+			<div class="contacts">
+				<p class="title">КОНТАКТЫ</p>
+				<ul>
+					<li class="tell">+38 (044) 360-051-1</li>
+					<li>+38 (061) 222-777-3</li>
+					<li class="mail">imgpahomov@aktivcorp.com</li>
+				</ul>
+
+				<button>ЗАКАЗАТЬ ЗВОНОК</button>
+				<div class="uk-clearfix"></div>
+			</div>
+			<div class="widget">
+				<p class="title">КОРПОРАТИВНЫЕ СКИДКИ</p>
+				<div class="body-widget">
+					<p class="discounts">от 3-4 сотрудников<span class="discounts"> ...............5%</span>
+					</p>
+					<p class="discounts">от 5-9 сотрудников<span class="discounts"> .............10%</span>
+					</p>
+					<p class="discounts">от 10 сотрудников<span class="discounts"> ..............15%</span>
+					</p>
+					<p>Если клиент регистрирует более 15 сотрудников, размер скидки обсуждается отдельно. Пожалуйста, свяжитесь с нами для получения более подробной информации.</p>
+					<div class="uk-clearfix"></div>
+				</div>
+			</div>
+			<div class="widget">
+				<p class="title">СКАЧАТЬ ПРОГРАММУ КУРСА</p>
+				<div class="body-widget">
+					<ul class="download">
+						<li class="item_1">Программа (doc. 1.5Mb)</li>
+						<li class="item_2">Программа (pdf. 1.5Mb)</li>
+						<li class="item_3">Распечатать программу</li>
+					</ul>
+				</div>
+			</div>
+			<div class="certificate">
+				<img src="imgs/certificate.png" alt="">
+			</div>
+		</div>
+		<div class="uk-clearfix"></div>
+	</div>
+	<div class="uk-clearfix"></div>
+
+	<div class="social uk-hidden-large ">
+		<p class="uk-text-center">ДРУЖИТЬ С НАМИ:
+			<a href=""><img src="imgs/vk.png" alt="">
+			</a>
+			<a href=""><img src="imgs/fb.png" alt="">
+			</a>
+			<a href=""><img src="imgs/ok.png" alt="">
+			</a>
+		</p>
+	</div>
+	<div class="uk-clearfix"></div>
+	<div class="registration">
+		<div class="uk-container-center">
+			<div class="woman uk-visible-large"><img src="imgs/woman.png" alt="">
+			</div>
+			<div class="right uk-width-small-1-1">
+				<div class="item_1 uk-width-medium-1-1 uk-width-small-1-1 uk-text-center-small">Подпишитесь на новости, акции и полезные материалы!</div>
+				<div class="item_2 uk-hidden-small">Заполните форму и узнавайте первым обо всех изменениях в бухгалтерском законодотельстве</div>
+				<div class="item_3 uk-text-center-small">
+					<div class="uk-container-center uk-width-small-1-1 uk-width-medium-1-3 uk-width-large-1-4">
+						<input type="name" placeholder="Ваше ФИО">
+					</div>
+					<div class="uk-container-center uk-width-small-1-1 uk-width-medium-1-3 uk-width-large-1-4">
+						<input type="e-mail" placeholder="Введите Ваш E-mail">
+					</div>
+					<div class="uk-container-center uk-width-small-1-1 uk-width-medium-1-3 uk-width-large-1-4">
+						<button>
+							<p>ОТПРАВИТЬ ЗАЯВКУ</p><img src="imgs/buttonreg.png" alt="" class='uk-container-center'>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="uk-clearfix"></div>
+		</div>
+	</div>
+	<footer class="uk-visible-large">
+		<div class="uk-container-center">
+			<div class="uk-width-1-5 item_1">
+				<p class="title">
+					О ПРОЕКТЕ
+				</p>
+				<ul>
+					<li><a href="">О нас</a>
+					</li>
+					<li><a href="">Документы</a>
+					</li>
+					<li><a href="">Партнеры</a>
+					</li>
+					<li><a href="">Новости</a>
+					</li>
+					<li><a href="">Способы оплаты</a>
+					</li>
+					<li><a href="">Контакты</a>
+					</li>
+				</ul>
+			</div>
+			<div class="uk-width-1-5 item_2">
+				<p class="title">
+					НАШИ УСЛУГИ
+				</p>
+				<ul>
+					<li><a href="">1С онлайн</a>
+					</li>
+					<li><a href="">1С программа</a>
+					</li>
+					<li><a href="">Обучение 1С</a>
+					</li>
+					<li><a href="">Электронная отчетность</a>
+					</li>
+					<li><a href="">Полезные материалы</a>
+					</li>
+				</ul>
+			</div>
+			<div class="uk-width-1-5 item_3">
+				<p class="title">
+					НАШИ ПРОЕКТЫ
+				</p>
+				<ul>
+					<li><a href="">inacademy.net</a>
+					</li>
+					<li><a href="">dipifr.com</a>
+					</li>
+					<li><a href="">webinary.biz</a>
+					</li>
+				</ul>
+			</div>
+			<div class="uk-width-1-5 item_4 uk-text-center">
+				<p class="title">
+					ДРУЖИТЬ С НАМИ
+				</p>
+				<a href=""><img src="imgs/vk2.png" alt="">
+				</a>
+				<a href=""><img src="imgs/fb2.png" alt="">
+				</a>
+				<a href=""><img src="imgs/ok2.png" alt="">
+				</a>
+			</div>
+			<div class="uk-clearfix"></div>
+
+			<p class="uk-text-center uk-visible-large">© 2014 1C Академия. Все права защищены.</p>
+		</div>
+	</footer>
+	<p class="uk-visible-medium medium uk-text-center">© 2014 1C Академия. Все права защищены.</p>
+	<p class="uk-visible-small small"></p>
+</body>
+
+</html>

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/uikit.css">
+	<link rel="stylesheet" href="css/components/slideshow.css">
+	<link rel="stylesheet" href="css/components/dotnav.css">
+	<link rel="stylesheet" href="css/components/slidenav.css">
+	<link rel="stylesheet" href="css/components/slider.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/uikit.js"></script>
+	<script src="js/core/modal.js"></script>
+	<script src="js/core/nav.js"></script>
+	<script src="js/components/slideshow.js"></script>
+	<script src="js/components/slideshow-fx.js"></script>
+	<script src="js/core/dropdown.js"></script>
+	<script src="js/components/slider.js"></script>
+	<meta charset="UTF-8">
+	<title>1C ACADEMY</title>
+</head>
+
+<body>
+	<header>
+		<div class="uk-grid">
+			<div class="uk-container-center item_1"><img src="imgs/logo.png" alt="">
+			</div>
+			<div class="uk-width-1-5 uk-visible-large item_2"><img src="imgs/10.png" alt="">
+			</div>
+			<div class="uk-width-1-5 uk-visible-large item_3">
+				<ul>
+					<li>+38(044)360-051-1</li>
+					<li>+38(061)222-777-3</li>
+					<li class="underline">pahomov@aktivcorp.com</li>
+				</ul>
+			</div>
+			<div class="uk-width-1-5 uk-visible-large authorize">
+				<div data-uk-dropdown="{mode:'click'}">
+					<button><img src="imgs/key.png">
+						<span>Вход для студентов</span>
+					</button>
+					<div class="login uk-dropdown">
+						<p class='students'><img src="imgs/key2.png" alt="">Вход для студентов</p>
+						<p class="title">Электронная почта</p>
+						<input type="e-mail">
+						<p class="title">Пароль</p>
+						<input type="password">
+						<p class="title">
+							<input type="checkbox"> Запормнить меня
+						</p>
+						<button class="right">Войти</button>
+						<p class="normal">Нет учетной записи?</p>
+						<p class="reg"><a href="">Зарегистрироваться</a>
+						</p>
+					</div>
+				</div>
+				<div class="search">
+					<input type="search" name='q' placeholder="Поиск... ">
+					<input type="submit" value=''>
+				</div>
+			</div>
+	</header>
+	<nav class="uk-navbar">
+		<div class="uk-hidden-large menu">
+			<div class="left">
+				<a href="#nav" class="uk-navbar-toggle-alt uk-hidden-large" data-uk-offcanvas><img src="imgs/toggle.png" alt="" class="toggle">
+				</a>
+				<div id="nav" class="uk-offcanvas">
+					<div class="uk-offcanvas-bar nav">
+						<ul class="uk-nav  uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav="{multiple:true}">
+							<li>
+								<a href="#">1C онлайн</a>
+							</li>
+							<li class='uk-parent'><a href="#">1С программа</a>
+								<ul class="uk-nav-sub">
+									<li><a href="#">Зарплата и управление персоналом</a>
+									</li>
+									<li><a href="#">Управление торговлей</a>
+									</li>
+									<li><a href="#">Управление торговым предприятием</a>
+									</li>
+									<li><a href="#">Бухгалтерия для Укрины</a>
+									</li>
+									<li><a href="#">Бухгалтерия с/х предприятия</a>
+									</li>
+									<li><a href="#">Комплексный учет для бюджетных организаций</a>
+									</li>
+									<li><a href="#">Базовые версии</a>
+									</li>
+									<li><a href="#">ИТС</a>
+									</li>
+									<li><a href="#">Все конфигурации</a>
+									</li>
+								</ul>
+							</li>
+							<li class='uk-parent'><a href="#">1С обучение</a>
+								<ul class="uk-nav-sub">
+									<li><a href="#">1</a>
+									</li>
+									<li><a href="#">2</a>
+									</li>
+									<li><a href="#">3</a>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#">1С отчетность</a>
+							</li>
+							<li class='uk-parent'><a href="#">О нас</a>
+								<ul class="uk-nav-sub">
+									<li><a href="#">1</a>
+									</li>
+									<li><a href="#">2</a>
+									</li>
+									<li><a href="#">3</a>
+									</li>
+								</ul>
+							</li>
+							<li class='uk-parent'><a href="#">Полезные материалы</a>
+								<ul class="uk-nav-sub">
+									<li><a href="#">1</a>
+									</li>
+									<li><a href="#">2</a>
+									</li>
+									<li><a href="#">3</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<div class="search">
+							<input type="search" name='q' placeholder="Поиск... ">
+							<input type="submit" value=''>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<a href="#man" class="uk-navbar-toggle-alt uk-hidden-large" data-uk-offcanvas><img src="imgs/man.png" alt="" class="man">
+				</a>
+				<div id="man" class="uk-offcanvas">
+					<div class="uk-offcanvas-bar man uk-offcanvas-bar-flip">
+						<ul class="uk-nav uk-nav-offcanvas" data-uk-nav>
+							<div class="uk-container-center">
+								<p class='students'><img src="imgs/key3.png" alt="">Вход для студентов</p>
+								<p class="title">Электронная почта
+									<input type="e-mail">
+								</p>
+
+								<p class="title">Пароль
+									<input type="password">
+								</p>
+
+								<p class="title">
+									<input type="checkbox"> Запормнить меня
+								</p>
+								<button class="right">Войти</button>
+								<div class="uk-clearfix"></div>
+								<p class="normal">Нет учетной записи?</p>
+								<p class="reg"><a href="">Зарегистрироваться</a>
+								</p>
+							</div>
+						</ul>
+					</div>
+				</div>
+				<a href="#map" class="uk-navbar-toggle-alt uk-hidden-large" data-uk-offcanvas><img src="imgs/map.png" alt="" class="map">
+				</a>
+			</div>
+
+			</a>
+		</div>
+		<div class="uk-container-center uk-container">
+			<ul class="uk-navbar-nav uk-visible-large">
+
+
+				<li><a href="#">1C ОНЛАЙН</a>
+				</li>
+
+
+				<li><a href="#">1C ПРОГРАММА</a>
+				</li>
+
+
+				<li><a href="#">1C ОБУЧЕНИЕ</a>
+				</li>
+
+
+				<li><a href="#">1C ОТЧЕТНОСТЬ</a>
+				</li>
+
+
+				<li> <a href="#">ПОЛЕЗНЫЕ МАТЕРИАЛЫ</a>
+				</li>
+
+
+				<li><a href="#">АКЦИИ</a>
+				</li>
+
+			</ul>
+		</div>
+	</nav>
+	<div class="slideshow-bg">
+		<div class="slide uk-slidenav-position" data-uk-slideshow="{autoplay:true, animation: 'random-fx', autoplayInterval:5000, duration:100, pauseOnHover: true, start: 0}">
+			<ul class="uk-slideshow">
+				<li><img src="imgs/slide1.png" alt="">
+				</li>
+				<li><img src="imgs/slide2.png" alt="">
+				</li>
+				<li><img src="imgs/slide3.png" alt="">
+				</li>
+				<li><img src="imgs/slide4.png" alt="">
+				</li>
+				<li><img src="imgs/slide5.png" alt="">
+				</li>
+			</ul>
+			<a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"><img src="imgs/slideleft.png" alt="">
+			</a>
+			<a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"><img src="imgs/slideright.png" alt="">
+			</a>
+			<ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
+				<li data-uk-slideshow-item="0">
+					<a href=""></a>
+				</li>
+				<li data-uk-slideshow-item="1">
+					<a href=""></a>
+				</li>
+				<li data-uk-slideshow-item="2">
+					<a href=""></a>
+				</li>
+				<li data-uk-slideshow-item="3">
+					<a href=""></a>
+				</li>
+				<li data-uk-slideshow-item="4">
+					<a href=""></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="indicator uk-visible-large">
+		<div class="uk-width-1-1">
+			<div class="uk-grid">
+				<div class="line item_1">
+					<div class="number">
+						<p class="left">280</p>
+					</div>
+					<div class="text item_1">
+						<p class="right">постоянных</p>
+						<p class="right">клиентов</p>
+					</div>
+				</div>
+				<div class="line item_2">
+					<div class="number">
+						<p class="left">24/7</p>
+					</div>
+					<div class="text item_2">
+						<p class="right">доступ</p>
+						<p class="right">онлайн</p>
+					</div>
+				</div>
+				<div class="line item_3">
+					<div class="number">
+						<p class="left">10</p>
+					</div>
+					<div class="text item_3">
+						<p class="right">лет</p>
+						<p class="right"> на рынке</p>
+					</div>
+				</div>
+				<div class="line item_4">
+					<div class="number">
+						<p class="left">2 133</p>
+					</div>
+					<div class="text item_1">
+						<p class="right">довольных</p>
+						<p class="right">стдуентов</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="online">
+		<p class="title">
+			1C онлайн и оффлайн версия
+		</p>
+		<div class="text">
+			<div class="left">
+				<iframe width="331" height="195" src="https://www.youtube.com/embed/T_U7HxOzhWw" frameborder="0" allowfullscreen class="uk-align-medium-left"></iframe>
+			</div>
+			<div class="right">
+				<p><span class="tab">Бухгалтерия</span> — одна из самых востребованных и, вместе с тем, стремительно меняющихся профессий в мире. Для того чтобы сохранить свою стоимость на рынке труда, иметь престижную работу и высокий стабильный заработок, бухгалтеру необходимо беспрерывно заниматься повышением квалификации.</p>
+				<p>Мы предлагаем Вашему вниманию уникальный проект — Интернет-портал <span class="text">1c-academy.com.</span> Здесь собрано все необходимое для обучения: сертифицированные курсы бухгалтерского учета от ЦСО «Актив», электронные учебники, свежие новости, актуальные вебинары и многое другое. Полезную информацию для себя найдут как опытные бухгалтеры, так и новички. </p>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="left">
+
+			</div>
+			<div class="right">
+				<button class="buttonl">
+					<span>1C ОНЛАЙН</span> <img src="imgs/buttonl.png" alt="">
+				</button>
+				<button class="buttonr">
+					<span>1C ПРОГРАММА</span><img src="imgs/buttonr.png" alt="">
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="slideshow2">
+		<div class="slide uk-slidenav-position" data-uk-slideshow="{autoplay:true, animation:'scroll'}">
+			<ul class="uk-slideshow slideshow">
+				<li>
+					<div class="left"><i class="uk-icon-quote-left uk-icon-large"></i>
+					</div>
+					<div class="right">
+						<p>Наше предприятие пользуется программой «1С Управление торговым предприятием 8» на условиях SaaS-услуги достаточно давно. За все время пользования этой услугой форс-мажорных ситуаций не возникало. Программа работает стабильно, быстро. Обновления ставятся по мере их выхода.... <a href="#"><span class="read">Читать полностью</span></a>
+						</p>
+					</div>
+					<p class="comment"><span>Зинченко Алексей</span>, директор ООО «Либра»</p>
+				</li>
+				<li>
+					<div class="left"><i class="uk-icon-quote-left uk-icon-large"></i>
+					</div>
+					<div class="right">
+						<p>Наше предприятие пользуется программой «1С Управление торговым предприятием 8» на условиях SaaS-услуги достаточно давно. За все время пользования этой услугой форс-мажорных ситуаций не возникало. Программа работает стабильно, быстро. Обновления ставятся по мере их выхода.... <a href="#"><span class="read">Читать полностью</span></a>
+						</p>
+					</div>
+					<p class="comment"><span>Зинченко Алексей</span>, директор ООО «Либра»</p>
+
+				</li>
+				<li>
+					<div class="left"><i class="uk-icon-quote-left uk-icon-large"></i>
+					</div>
+					<div class="right">
+						<p>Наше предприятие пользуется программой «1С Управление торговым предприятием 8» на условиях SaaS-услуги достаточно давно. За все время пользования этой услугой форс-мажорных ситуаций не возникало. Программа работает стабильно, быстро. Обновления ставятся по мере их выхода.... <a href="#"><span class="read">Читать полностью</span></a>
+						</p>
+					</div>
+					<p class="comment"><span>Зинченко Алексей</span>, директор ООО «Либра»</p>
+
+				</li>
+				<li>
+					<div class="left"><i class="uk-icon-quote-left uk-icon-large"></i>
+					</div>
+					<div class="right">
+						<p>Наше предприятие пользуется программой «1С Управление торговым предприятием 8» на условиях SaaS-услуги достаточно давно. За все время пользования этой услугой форс-мажорных ситуаций не возникало. Программа работает стабильно, быстро. Обновления ставятся по мере их выхода.... <a href="#"><span class="read">Читать полностью</span></a>
+						</p>
+					</div>
+					<p class="comment"><span>Зинченко Алексей</span>, директор ООО «Либра»</p>
+
+				</li>
+				<li>
+					<div class="left"><i class="uk-icon-quote-left uk-icon-large"></i>
+					</div>
+					<div class="right">
+						<p>Наше предприятие пользуется программой «1С Управление торговым предприятием 8» на условиях SaaS-услуги достаточно давно. За все время пользования этой услугой форс-мажорных ситуаций не возникало. Программа работает стабильно, быстро. Обновления ставятся по мере их выхода.... <a href="#"><span class="read">Читать полностью</span></a>
+						</p>
+					</div>
+					<p class="comment"><span>Зинченко Алексей</span>, директор ООО «Либра»</p>
+
+				</li>
+			</ul>
+			<a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"><img src="imgs/slideleft2.png" alt="">
+			</a>
+			<a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"><img src="imgs/slideright2.png" alt="">
+			</a>
+		</div>
+	</div>
+	<div class="content">
+		<div class="left uk-width-large-6-10 uk-width-small-1-1">
+			<div class="post-main">
+				<div class="title uk-width-1-1">
+					<h2>1C ОБУЧЕНИЕ<h2>
+				</div>
+				<div class="post">
+				<img src="imgs/thumbnail.png" alt="">
+					<p>Авторский сертифицированный курс «Бухгалтерский учет с нуля + Первые шаги в 1С:Бухгалтерия 8 для Украины» разработан преподавателями ЦО "Актив" для тех, кто задумывается о смене профессии, мечтает получить стабильную, престижную и высокооплачиваемую работу, а также постичь все премудрости ведения учета и разобраться в программе 1С:Бухгалтерия 8 для Украины. Этот бухгалтерский курс состоит из теоретической.
+</p><span class="read-more"><a href="#"> <img src="imgs/read-more.png" alt=""> Подробнее... </a></span>
+				</div>
+			</div>
+			<div class="post-main">
+				<div class="title uk-width-1-1">
+					<h2>1C ОТЧЕТНОСТЬ<h2>
+				</div>
+				<div class="post">
+				<img src="imgs/thumbnail.png" alt="">
+					<p>Авторский сертифицированный курс «Бухгалтерский учет с нуля + Первые шаги в 1С:Бухгалтерия 8 для Украины» разработан преподавателями ЦО "Актив" для тех, кто задумывается о смене профессии, мечтает получить стабильную, престижную и высокооплачиваемую работу, а также постичь все премудрости ведения учета и разобраться в программе 1С:Бухгалтерия 8 для Украины. Этот бухгалтерский курс состоит из теоретической.
+</p><span class="read-more"><a href="#"> <img src="imgs/read-more.png" alt=""> Подробнее... </a></span>
+				</div>
+			</div>
+		</div>
+		<div class="right uk-width-large-3-10 uk-width-small-1-1">
+			<div class="news">
+				<div class="title">
+					<h2>НОВОСТИ</h2>
+				</div>
+				<div class="news-list uk-width-large-1-1 uk-width-medium-1-3 uk-width-small-1-1">
+					<p class="title-news">Антивирус Zillya! - лучшее решение в сфере информационной безопасности</p>
+					<p class="body-news uk-hidden-small">Угрозы в эпоху цифры Обеспечение защиты персонального компьютера стало...</p>
+					<p class="meta">Среда, 25 Июль 2014 12:59</p>
+					<div class="uk-clearfix"></div>
+				</div>
+				<div class="news-list uk-width-large-1-1 uk-width-medium-1-3 uk-width-small-1-1">
+					<p class="title-news">Антивирус Zillya! - лучшее решение в сфере информационной безопасности</p>
+					<p class="body-news uk-hidden-small">Угрозы в эпоху цифры Обеспечение защиты персонального компьютера стало...</p>
+					<p class="meta">Среда, 25 Июль 2014 12:59</p>
+					<div class="uk-clearfix"></div>
+				</div>
+				<div class="news-list uk-width-large-1-1 uk-width-medium-1-3 uk-width-small-1-1">
+					<p class="title-news">Антивирус Zillya! - лучшее решение в сфере информационной безопасности</p>
+					<p class="body-news  uk-hidden-small">Угрозы в эпоху цифры Обеспечение защиты персонального компьютера стало...</p>
+					<p class="meta">Среда, 25 Июль 2014 12:59</p>
+					<div class="uk-clearfix"></div>
+				</div>
+				<span class="all-news"><a href="#"><img src="imgs/read-more.png" alt=""> Все новости</a></span>
+			</div>
+		</div>
+		<div class="uk-clearfix"></div>
+	</div>
+	<div class="uk-width-1-1 border">
+
+	</div>
+	<div class="clients uk-visible-large">
+		<p class="title">
+			Наши киленты
+		</p>
+		<div data-uk-slider="{activecls: uk-active, infinite: false}" class="clients-image">
+			<div class="slider uk-slider-container">
+				<ul class="ul-slider uk-slider uk-grid-width-small-1-5">
+					<li><img src="imgs/partner1.png" alt="">
+					</li>
+					<li><img src="imgs/partner2.png" alt="">
+					</li>
+					<li><img src="imgs/partner3.png" alt="">
+					</li>
+					<li><img src="imgs/partner4.png" alt="">
+					</li>
+					<li><img src="imgs/partner5.png" alt="">
+					</li>
+				</ul>
+			</div>
+			<a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous previous" data-uk-slider-item="previous"><img src="imgs/slideleft2.png" alt="">
+			</a>
+			<a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next next" data-uk-slider-item="next"><img src="imgs/slideright2.png" alt="">
+			</a>
+		</div>
+		<p>Технологии SaaS (software as a service) или «облачный» режим основан на использовании различных, в том числе и бухгалтерских, программ онлайн. Модель SaaS весьма популярна во всем мире, поскольку освобождает клиентов от массы проблем, связанных с покупкой лицензии, установкой программ на всех компьютерах сотрудников, настройкой и обновлением. Все что Вам потребуется — обычный персональный компьютер (минимальная скорость канала — 128 Кб/с) с доступом в Интернет. Все остальное — установка, обновления, сервера, обслуживание, резервное копирование, сохранность данных — мы сделаем за Вас.</p>
+		<p>Воспользовавшись услугой «1С как SaaS» от компании «Актив ВИД», вы получите возможность работать с платформой 1С в онлайн режиме, находясь в любой точке планеты, семь дней в неделю, 24 часа в сутки.</p>
+		<a href="#top" class="uk-button uk-visible-large" data-uk-smooth-scroll><img src="imgs/up.png" alt="">
+		</a>
+		<div class="uk-clearfix"></div>
+	</div>
+	<div class="social uk-hidden-large ">
+		<p class="uk-text-center">ДРУЖИТЬ С НАМИ:
+			<a href=""><img src="imgs/vk.png" alt="">
+			</a>
+			<a href=""><img src="imgs/fb.png" alt="">
+			</a>
+			<a href=""><img src="imgs/ok.png" alt="">
+			</a>
+		</p>
+	</div>
+	<div class="registration">
+		<div class="uk-container-center">
+			<div class="left uk-visible-large"><img src="imgs/envelope.png" alt="">
+			</div>
+			<div class="right uk-width-small-1-1">
+				<div class="item_1 uk-width-medium-1-1 uk-width-small-1-1 uk-text-center-small">Подпишитесь на новости, акции и полезные материалы!</div>
+				<div class="item_2 uk-hidden-small">Заполните форму и узнавайте первым обо всех изменениях в бухгалтерском законодотельстве</div>
+				<div class="item_3 uk-text-center-small">
+					<div class="uk-container-center uk-width-small-1-1 uk-width-medium-1-3 uk-width-large-1-4">
+						<input type="name" placeholder="Ваше ФИО">
+					</div>
+					<div class="uk-container-center uk-width-small-1-1 uk-width-medium-1-3 uk-width-large-1-4">
+						<input type="e-mail" placeholder="Введите Ваш E-mail">
+					</div>
+					<div class="uk-container-center uk-width-small-1-1 uk-width-medium-1-3 uk-width-large-1-4">
+						<button>
+							<p>ОТПРАВИТЬ ЗАЯВКУ</p><img src="imgs/buttonreg.png" alt="" class='uk-container-center'>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="uk-clearfix"></div>
+		</div>
+	</div>
+	<footer class="uk-visible-large">
+		<div class="uk-container-center">
+			<div class="uk-width-1-5 item_1">
+				<p class="title">
+					О ПРОЕКТЕ
+				</p>
+				<ul>
+					<li><a href="">О нас</a>
+					</li>
+					<li><a href="">Документы</a>
+					</li>
+					<li><a href="">Партнеры</a>
+					</li>
+					<li><a href="">Новости</a>
+					</li>
+					<li><a href="">Способы оплаты</a>
+					</li>
+					<li><a href="">Контакты</a>
+					</li>
+				</ul>
+			</div>
+			<div class="uk-width-1-5 item_2">
+				<p class="title">
+					НАШИ УСЛУГИ
+				</p>
+				<ul>
+					<li><a href="">1С онлайн</a>
+					</li>
+					<li><a href="">1С программа</a>
+					</li>
+					<li><a href="">Обучение 1С</a>
+					</li>
+					<li><a href="">Электронная отчетность</a>
+					</li>
+					<li><a href="">Полезные материалы</a>
+					</li>
+				</ul>
+			</div>
+			<div class="uk-width-1-5 item_3">
+				<p class="title">
+					НАШИ ПРОЕКТЫ
+				</p>
+				<ul>
+					<li><a href="">inacademy.net</a>
+					</li>
+					<li><a href="">dipifr.com</a>
+					</li>
+					<li><a href="">webinary.biz</a>
+					</li>
+				</ul>
+			</div>
+			<div class="uk-width-1-5 item_4 uk-text-center">
+				<p class="title">
+					ДРУЖИТЬ С НАМИ
+				</p>
+				<a href=""><img src="imgs/vk2.png" alt="">
+				</a>
+				<a href=""><img src="imgs/fb2.png" alt="">
+				</a>
+				<a href=""><img src="imgs/ok2.png" alt="">
+				</a>
+			</div>
+			<div class="uk-clearfix"></div>
+
+			<p class="uk-text-center uk-visible-large">© 2014 1C Академия. Все права защищены.</p>
+		</div>
+	</footer>
+	<p class="uk-visible-medium medium uk-text-center">© 2014 1C Академия. Все права защищены.</p>
+	<p class="uk-visible-small small"></p>
+</body>
+
+</html>
